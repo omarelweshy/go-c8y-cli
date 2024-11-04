@@ -157,16 +157,22 @@ The following commands require sudo. If you don't have `sudo` installed, then re
     ]
     }>
     <TabItem value="bash">
-
+    
     ```bash
+    # MacOS
     echo 'source "$(brew --prefix)/etc/go-c8y-cli/shell/c8y.plugin.sh"' >> ~/.bashrc
+    # Linux
+    echo 'source "/etc/go-c8y-cli/shell/c8y.plugin.zsh"' >> ~/.zshrc
     ```
 
     </TabItem>
     <TabItem value="zsh">
 
     ```bash
+    # MacOS
     echo 'source "$(brew --prefix)/etc/go-c8y-cli/shell/c8y.plugin.zsh"' >> ~/.zshrc
+    # Linux
+    echo 'source "/etc/go-c8y-cli/shell/c8y.plugin.zsh"' >> ~/.zshrc
     ```
 
     </TabItem>
@@ -174,7 +180,10 @@ The following commands require sudo. If you don't have `sudo` installed, then re
 
     ```bash
     mkdir -p ~/.config/fish
+    # MacOS
     echo 'source "$(brew --prefix)/etc/go-c8y-cli/shell/c8y.plugin.fish"' >> ~/.config/fish/config.fish
+    # Linux
+    echo 'source "/etc/go-c8y-cli/shell/c8y.plugin.fish"' >> ~/.config/fish/config.fish
     ```
 
     </TabItem>
